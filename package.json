@@ -1,0 +1,23 @@
+{
+  "name": "test-fuite",
+  "version": "1.0.0",
+  "description": "Test of the memory leak tracking tool https://github.com/nolanlawson/fuite for \"L'Atelier du Code\".",
+  "main": "index.js",
+  "scripts": {
+    "debug": "NODE_OPTIONS=--inspect-brk fuite --debug --scenario ./scenario.mjs http://localhost:4200",
+    "test": "fuite --scenario ./scenario.mjs http://localhost:4200"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbuget/test-fuite-js.git"
+  },
+  "author": "",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jbuget/test-fuite-js/issues"
+  },
+  "homepage": "https://github.com/jbuget/test-fuite-js#readme",
+  "devDependencies": {
+    "fuite": "^1.3.2"
+  }
+}
